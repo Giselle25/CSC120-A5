@@ -14,16 +14,29 @@ public class Boot {
     }
 
     /*
-     * TODO: Modify this method to print ASCII Art Boot
+     * Prints ASCII art depicting a boots to the console
      */
     public void display() {
         if (this.direction.equals("left")) {
-          System.out.println("Left boot?");
+          System.out.println("    ,|___|, ");
+          System.out.println("     |===|  ");
+          System.out.println("     |   |  ");
+          System.out.println("     /  &|  ");
+          System.out.println("   .-'` ,)  ");
+          System.out.println("  `------`  ");
+
+
         } else if (this.direction.equals("right")) {
-          System.out.println("Right boot?");
+          System.out.println("            ,|___|,");
+          System.out.println("             |===|");
+          System.out.println("             |   |");
+          System.out.println("             |&  \\");
+          System.out.println("             (,  `'-.");
+          System.out.println("             `-------");
         } else {
           System.out.println("Which boot?");
         }
+
     }
 
     /* main method (for testing) */
@@ -34,3 +47,7 @@ public class Boot {
         myRightBoot.display();
     }
 }
+
+
+
+
